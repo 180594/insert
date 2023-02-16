@@ -1,0 +1,20 @@
+FUNCTION insertion(parameters) : INTEGER
+VAR
+    tab1 : ARRAY_OF INTEGER[];;
+    i,j= INTEGER;
+    tab2 : ARRAY_OF INTEGER[];
+BEGIN
+    FOR i FROM 0 TO tab1.lenght-1 STEP 1  DO
+       IF (tab1[i]< tab1[i+1]) THEN
+       j=i-1;
+       return tab2[j] =tab1[i]
+            IF (tab2[j]> tab1[i]) THEN
+                return tab2[j+1]= tab [j];
+                j=j-1
+            END_IF
+        
+       END_IF
+       tab2[j+1]=tab1[i]
+    END_FOR
+    write tab2 ;
+END
